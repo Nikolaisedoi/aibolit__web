@@ -1,0 +1,67 @@
+.advantages {
+  padding: 19.75rem 0;
+  &__decor {
+    position: relative;
+  }
+  &__decor-box {
+    max-width: 45.62rem;
+    margin: 0 auto;
+  }
+  &__decor-text {
+    font-family: SchoolBook;
+    font-weight: bold;
+    font-size: 9rem;
+    line-height: 6.87rem;
+    color: var(--brown);
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+  &__decor-span {
+    display: block;
+    font-weight: normal;
+    font-size: 5rem;
+    line-height: 6.87rem;
+    color: var(--color_title);
+  }
+  &__img {
+    max-width: 18rem;
+    height: 13.93rem;
+    position: absolute;
+    top: 17.5rem;
+    right: 23rem;
+  }
+  &__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-top: 30rem;
+    margin-bottom: 6.5rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    padding: 0 0.62rem 0.62rem 0;
+    gap: 4.37rem 5.62rem;
+  }
+  // &__item {
+  //   margin-bottom: 4.37rem;
+  // }
+  &__item-box {
+    @extend.flex-aic;
+  }
+  &__item-title {
+    font-size: 1.87rem;
+    line-height: 2.5rem;
+    margin-bottom: 3.75rem;
+  }
+  &__item-img {
+    margin-right: 2.5rem;
+  }
+  &__item-text {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.87rem;
+    color: var(--brown);
+  }
+}

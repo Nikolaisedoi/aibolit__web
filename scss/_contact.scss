@@ -1,0 +1,55 @@
+.contact {
+  padding: 14.68rem 0 13.06rem;
+  &__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 4.37rem;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+  &__address-wrapper {
+    margin-right: 3.12rem;
+  }
+  &__address {
+    margin-bottom: 2.5rem;
+  }
+  &__address-title {
+    font-size: 1.87rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+  }
+  &__icons-wrapper {
+    @extend.flex-aic;
+    max-width: 24rem;
+    margin-bottom: 1.25rem;
+  }
+  &__icons-wrapper:last-child {
+    margin-bottom: 0;
+  }
+  &__icon {
+    width: 2.87rem;
+    height: 2.87rem;
+    fill: var(--color_btn);
+    transition: fill 0.3s ease-in-out;
+    margin-right: 1.25rem;
+    &:hover {
+      fill: var(--brown);
+    }
+  }
+  &__text,
+  &__link {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.87rem;
+    color: var(--brown);
+  }
+  &__map-img {
+    max-width: 59.37rem;
+  }
+}

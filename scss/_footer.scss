@@ -1,0 +1,84 @@
+.footer {
+  background-color: var(--brown);
+  padding: 5rem 0 3.75rem 0;
+  &__logo-wrapper {
+    @extend .flex-jcsb-aic;
+    margin-bottom: 1.87rem;
+  }
+  &__logo {
+    @extend .flex-jcsb-aic;
+  }
+  &__logo-icon {
+    width: 5.62rem;
+    height: 5.62rem;
+    margin-right: 1.37rem;
+  }
+  &__logo-title {
+    font-weight: bold;
+    font-size: 3.12rem;
+    line-height: 2.87rem;
+    color: var(--light);
+    margin-bottom: 0.31rem;
+  }
+  &__logo-text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: var(--light);
+  }
+  &__app {
+    @extend .flex-aic;
+  }
+  &__app-img {
+    margin-right: 0.81rem;
+  }
+  &__bottom {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    font-size: 1.25rem;
+    line-height: 1.87rem;
+    color: var(--light);
+    font-weight: normal;
+  }
+  &__bottom-left {
+    display: flex;
+    margin-top: 1.25rem;
+  }
+  &__bottom-policy {
+    margin-left: 6.56rem;
+    max-width: 12.5rem;
+  }
+  &__menu-list {
+    margin-left: 6.25rem;
+  }
+  &__menu-list li {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__social {
+    display: flex;
+    margin-bottom: 1.87rem;
+  }
+  &__social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 3.12rem;
+    fill: var(--light);
+    transition: fill 0.3s ease-in-out;
+    &:hover {
+      fill: var(--brown_light);
+    }
+  }
+  &__site {
+    margin-bottom: 4.37rem;
+  }
+  &__site-link {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

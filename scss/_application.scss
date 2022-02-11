@@ -1,0 +1,28 @@
+.application {
+  background-color: var(--color_btn);
+  padding: 12.93rem 0 7.06rem;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 1.87rem;
+    line-height: 1.25rem;
+    color: var(--light);
+  }
+  &__title {
+    font-size: 5rem;
+    line-height: 6.87rem;
+    color: var(--light);
+    max-width: 826px;
+    margin: 1.87rem -9.37rem 2.62rem 0;
+  }
+  &__img-box {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+.hero {
+  margin-top: 100px;
+  position: relative;
+  &__slick {
+    height: 50rem;
+    position: relative;
+    padding: 2.5rem 0 2.5rem 18%;
+    overflow: hidden;
+  }
+  .hero__slider-slide.slick-slide.slick-current.slick-active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__slide-left {
+    max-width: 40.62rem;
+  }
+  &__slide-right {
+    width: 100%;
+    position: relative;
+  }
+  &__title {
+    font-size: 5rem;
+    line-height: 6.87rem;
+    color: var(--color_title);
+    max-width: 40.31rem;
+    margin-bottom: 3.12rem;
+  }
+  &__btn {
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 12.31rem;
+    z-index: 4565;
+    &:hover {
+      background-color: var(--brown);
+    }
+  }
+  &__social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 3.12rem;
+    fill: var(--brown_light);
+    transition: fill 0.3s ease-in-out;
+    &:hover {
+      fill: var(--brown);
+    }
+  }
+  &__slide-phone {
+    font: size 1.5rem;
+    line-height: 1.87rem;
+    color: var(--brown);
+    position: absolute;
+    right: 4.37rem;
+    bottom: 4.37rem;
+  }
+  &__img {
+    object-fit: cover;
+  }
+}
+.slick-list .draggable {
+  padding-left: 1rem;
+}

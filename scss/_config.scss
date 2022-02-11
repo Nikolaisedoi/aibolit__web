@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  color: var(--brown_light);
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+.close {
+  display: none;
+}
+.visibility__hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.container {
+  max-width: 1386px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SchoolBook Bold Cyrillic", arial;
+  font-family: SchoolBook;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--color_title);
+}
+.btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: var(--light);
+  background: var(--color_btn);
+  box-shadow: 0px 4px 20px var(--color_btn);
+  border-radius: 2.12rem;
+  padding: 1.5rem 4.87rem;
+}
+button {
+  cursor: pointer;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+//@extend
+.flex-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-aic {
+  display: flex;
+  align-items: center;
+}
+.flex-jcsb-aie {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.flex-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column-jcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-column-jcc-aic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//@mixin
+@mixin flex-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-column-jcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slick-dots {
+  position: absolute;
+  left: 6.87rem;
+  top: 5%;
+}
+.slick-dots button {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: var(--color_btn);
+  border: none;
+  background-color: transparent;
+  margin: 2.18rem 0;
+  cursor: pointer;
+}
+.slick-dots li.slick-active {
+  width: 40px;
+  height: 40px;
+  background-image: url(../image/process.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  z-index: 544;
+}
+.slick-dots li button:hover {
+  color: var(--brown);
+}

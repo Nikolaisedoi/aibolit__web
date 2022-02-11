@@ -1,0 +1,114 @@
+// .main__collective-doctor {
+//   margin: 0 230px 0 0;
+// }
+.sidebar__doctor {
+  &-img {
+    width: 333px;
+    height: 333px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  &-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--brown_light);
+    margin-bottom: 30px;
+  }
+}
+.sidebar__group-btn {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.sidebar__btn {
+  display: inline-block;
+  background: var(--color_btn);
+  box-shadow: 0px 4px 20px var(--color_btn);
+  border-radius: 33.5px;
+  padding: 24px 78px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--light);
+  border: none;
+}
+.sidebar__reviews-btn {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color_btn);
+  border: none;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+.doctor__wrapper {
+  margin-right: 230px;
+}
+.doctor__info {
+  &-link {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: center;
+    color: var(--color_btn);
+    margin-bottom: 60px;
+    img {
+      margin-right: 5px;
+    }
+  }
+  &-name {
+    font-family: SchoolBook;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  &-experience {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  &-direction,
+  &-text {
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--brown);
+    margin-bottom: 20px;
+    max-width: 909px;
+  }
+}
+.courses {
+  &__title {
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--brown);
+    margin-bottom: 20px;
+  }
+  &__item-wrapper {
+    @extend.flex-jcsb;
+    margin-bottom: 100px;
+  }
+  &__item {
+    display: inline-block;
+    background: var(--light);
+    border: 1px solid var(--grey_light);
+    border-radius: 20px;
+    padding: 16px;
+  }
+  &__year {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--brown_light);
+    margin-bottom: 5px;
+  }
+  &__name {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color_title);
+  }
+}
