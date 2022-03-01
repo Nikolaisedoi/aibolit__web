@@ -58,7 +58,7 @@ h6 {
   line-height: 1.25rem;
   color: var(--light);
   background: var(--color_btn);
-  box-shadow: 0px 4px 20px var(--color_btn);
+  box-shadow: 0px 4px 1.25rem var(--color_btn);
   border-radius: 2.12rem;
   padding: 1.5rem 4.87rem;
 }
@@ -70,7 +70,29 @@ button {
   height: auto;
   display: block;
 }
-
+.block__title {
+  font-weight: normal;
+  font-size: 1.87rem;
+  line-height: 2.5rem;
+  color: var(--color_title);
+  margin-bottom: 2.5rem;
+}
+.block__text {
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.87rem;
+  color: var(--color_title);
+  margin-bottom: 2.5rem;
+}
+.block__list {
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.87rem;
+  color: var(--color_title);
+}
+.swiper {
+  z-index: 0;
+}
 //@extend
 .flex-jcsb {
   display: flex;
@@ -131,8 +153,8 @@ button {
 .slick-dots button {
   display: block;
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   font-size: 1.25rem;
   line-height: 1.25rem;
   color: var(--color_btn);
@@ -142,8 +164,8 @@ button {
   cursor: pointer;
 }
 .slick-dots li.slick-active {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-image: url(../image/process.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,4 +174,14 @@ button {
 }
 .slick-dots li button:hover {
   color: var(--brown);
+}
+.swiper-pagination-bullet {
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.87rem;
+  color: var(--brown_light);
+  background-color: transparent;
+  &-active {
+    color: var(--color_title);
+  }
 }

@@ -74,9 +74,15 @@
     &__link {
       color: var(--color_btn);
       transition: color 0.3s ease-in-out;
-      &:hover {
-        color: var(--brown);
-      }
+      // &:hover {
+      //   color: var(--brown);
+      // }
+    }
+    &:hover,
+    &:hover svg,
+    &:hover a {
+      color: var(--brown);
+      fill: var(--brown);
     }
   }
 }

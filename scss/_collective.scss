@@ -3,15 +3,16 @@
 }
 .sidebar {
   width: 30%;
-  margin-left: 230px;
+  flex-shrink: 0;
+  margin-left: 14.37rem;
   &__title {
-    font-size: 80px;
-    line-height: 110px;
+    font-size: 5rem;
+    line-height: 6.87rem;
     color: var(--color_title);
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
   &__list li {
-    margin-bottom: 30px;
+    margin-bottom: 1.87rem;
     transition: color 0.3s ease-in-out;
     &:hover {
       color: var(--brown);
@@ -19,82 +20,82 @@
   }
 }
 .collective {
-  max-width: 909px;
-  margin-right: 230px;
+  max-width: 56.81rem;
+  margin-right: 14.37rem;
   &__top-img {
-    max-width: 909px;
+    max-width: 56.81rem;
     width: 100%;
-    height: 470px;
-    border-radius: 20px;
+    height: 29.37rem;
+    border-radius: 1.25rem;
     object-fit: cover;
-    margin-bottom: 50px;
+    margin-bottom: 3.12rem;
   }
   &__top-title {
-    margin-bottom: 30px;
+    margin-bottom: 1.87rem;
   }
   &__top-text {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--brown);
-    margin-bottom: 100px;
+    margin-bottom: 3.12rem;
   }
 }
 .specialists {
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 3.12rem;
   }
   &__cards-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin-bottom: 100px;
+    gap: 1.56rem;
+    margin-bottom: 6.25rem;
   }
   &__card {
     display: flex;
-    padding: 30px;
+    padding: 1.87rem;
     background: var(--light);
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    box-shadow: 2px 2px 1.25rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
   }
   &__card-link {
     display: flex;
   }
   &__card-left {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
   &__card-img {
-    width: 130px;
-    height: 130px;
+    width: 8.12rem;
+    height: 8.12rem;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     object-fit: cover;
   }
   &__card-experience {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center;
     color: var(--color_btn);
   }
   &__card-post,
   &__card-specialization {
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1rem;
     color: var(--brown_light);
-    margin-bottom: 10px;
+    margin-bottom: 0.62rem;
   }
   &__card-name,
   &__card-direction {
     font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.24rem;
+    line-height: 1.56rem;
     color: var(--color_title);
-    max-width: 240px;
-    margin-bottom: 20px;
+    max-width: 15rem;
+    margin-bottom: 1.25rem;
   }
 }
 .collective__title {
   font-weight: normal;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.87rem;
+  line-height: 2.5rem;
   color: var(--color_title);
 }

@@ -1,0 +1,117 @@
+.services__block {
+  max-width: 56.81rem;
+}
+.services__item {
+  background: var(--light);
+  box-shadow: 2px 2px 1.25rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  &-link {
+    display: flex;
+  }
+  &-photo {
+    width: 3.12rem;
+    height: 3.12rem;
+    border-radius: 50%;
+    background: var(--brown_light);
+    margin-right: 1rem;
+  }
+  &-btn {
+    top: 37%;
+    right: 2.18rem;
+  }
+  &:hover,
+  &:hover p {
+    color: var(--light);
+    background-color: var(--color_btn);
+  }
+}
+.services__content {
+  margin-bottom: 6.25rem;
+  &-image {
+    margin-bottom: 3.12rem;
+    img {
+      width: 100%;
+      max-height: 26.5rem;
+      border-radius: 1.25rem;
+      object-fit: cover;
+    }
+  }
+}
+.services__title {
+  margin-bottom: 0;
+  &-all {
+    margin-bottom: 2.87rem;
+  }
+}
+.services__text {
+  margin-bottom: -1.87rem;
+}
+.services__slider {
+  padding: 1.87rem 0 6.25rem;
+  z-index: 0;
+}
+.slide__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.87rem 1.87rem;
+  margin-bottom: 0.31rem;
+  &:nth-child(odd) {
+    background: var(--grey_light);
+    mix-blend-mode: normal;
+    border-radius: 1rem;
+  }
+  &:nth-child(even) {
+    background: #fffefe;
+    mix-blend-mode: normal;
+    border-radius: 1rem;
+  }
+  &-name,
+  &-price {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: var(--color_title);
+  }
+}
+.services__price-slider {
+  position: relative;
+  max-width: 56.81rem;
+  margin: 0 0 6.25rem 0;
+}
+.services__swiper-pagination {
+  position: static;
+  text-align: right;
+  &-top {
+    margin-bottom: 1.87rem;
+  }
+  &-bottom {
+    bottom: 0;
+  }
+}
+.services__all {
+  background: var(--grey_light);
+  padding: 3.12rem 0 6.25rem;
+  &-slider {
+    position: relative;
+    padding: 1.25rem 0.62rem;
+  }
+  &-slide {
+    max-width: 20rem;
+  }
+  &-link {
+    padding: 1.5rem;
+    background: #fffefe;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.31rem rgba(#000, 0.2);
+    min-height: 13.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0 0 0.31rem var(--brown);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

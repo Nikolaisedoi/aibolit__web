@@ -18,6 +18,7 @@
   }
   &__list li:hover {
     box-shadow: 0 0 5px var(--brown);
+    fill: var(--brown);
     transition: 0.3s ease-in-out;
   }
   &__card-link {

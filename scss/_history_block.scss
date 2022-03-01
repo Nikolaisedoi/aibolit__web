@@ -1,0 +1,37 @@
+.main__history {
+  display: flex;
+}
+.history__block {
+  max-width: 56.81rem;
+}
+.history__content {
+  margin-bottom: 6.25rem;
+  &-title {
+    margin-bottom: 2.5rem;
+  }
+  &-text {
+    margin-bottom: 2.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-photo {
+    display: flex;
+    column-gap: 3.12rem;
+    max-width: 56.81rem;
+    margin-bottom: 3.12rem;
+    img {
+      width: 47%;
+      max-height: 26.5rem;
+      object-fit: cover;
+    }
+  }
+  &-image {
+    margin: 4.37rem 0 3.12rem;
+  }
+  &-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+}

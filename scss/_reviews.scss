@@ -1,75 +1,91 @@
 .reviews {
   &__title {
-    margin-bottom: 10px;
+    margin-bottom: 0.62rem;
   }
   &__text {
     display: block;
     font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 1.25rem;
+    margin-bottom: 1.87rem;
+  }
+  &__slider {
+    position: relative;
+    max-width: 56.81rem;
+    margin: 0 0 6.25rem 0;
   }
   &__item-box span {
     display: block;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1rem;
     color: var(--brown_light);
-    margin-bottom: 10px;
+    margin-bottom: 0.62rem;
   }
   &__item {
     display: flex;
     position: relative;
     background: var(--light);
     border: 1px solid var(--grey_light);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
-    max-width: 909px;
+    border-radius: 1.25rem;
+    padding: 1.87rem;
+    margin-bottom: 1.87rem;
+    max-width: 56.81rem;
     width: 100%;
   }
   &__item-icon {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 1.87rem;
+    right: 1.87rem;
   }
   &__item-name {
     font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.25rem;
+    line-height: 1.56rem;
     color: var(--color_title);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   &__item-text {
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.87rem;
     color: var(--brown);
-    margin-bottom: 30px;
-    max-width: 690px;
+    margin-bottom: 1.87rem;
+    max-width: 43.12rem;
   }
   &__item-answer {
-    @extend.flex-jcsb;
+    display: flex;
     img {
       display: block;
-      width: 75px;
-      height: 75px;
+      width: 4.68rem;
+      height: 4.68rem;
       border-radius: 50%;
       object-fit: cover;
+      margin-right: 1rem;
     }
     p {
       font-weight: normal;
-      font-size: 20px;
-      line-height: 25px;
+      font-size: 1.25rem;
+      line-height: 1.56rem;
       color: var(--brown);
-      max-width: 590px;
+      max-width: 36.87rem;
+    }
+  }
+  &__swiper-pagination {
+    position: static;
+    &-top {
+      margin-bottom: 1.87rem;
+      text-align: right;
+    }
+    &-bottom {
+      text-align: right;
     }
   }
 }
 .user__photo {
   position: relative;
-  width: 130px;
-  height: 130px;
+  width: 8.12rem;
+  height: 8.12rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 30px;
+  margin-right: 1.87rem;
 }

@@ -41,5 +41,75 @@ $(document).ready(function () {
     modalLogin.classList.toggle('is-open');
   });
 
+  //swiper
+  const courses = new Swiper('.courses__slider', {
+    slidesPerView: 3,
+    autoHeight: true,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: '.courses__item-btn',
+    },
+  });
+  const services = new Swiper('.services__slider', {
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: '.services__item-btn',
+    },
+  });
+  const servicesAll = new Swiper('.services__all-slider', {
+    slidesPerView: 4,
+    autoHeight: true,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: '.services__all-btn',
+    },
+  });
+  const reviews = new Swiper('.reviews__slider', {
+    slidesPerView: 1,
+    autoHeight: true,
+    pagination: {
+      el: '.reviews__swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+  const blogSlider = new Swiper('.blog__box-swiper', {
+    slidesPerView: 1,
+    pagination: {
+      el: '.blog__swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+  const news = new Swiper('.news__box-swiper', {
+    slidesPerView: 1,
+    // autoHeight: true,
+    pagination: {
+      el: '.news__swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+  const swiper = new Swiper('.services__price-slider', {
+    slidesPerView: 1,
+    autoHeight: true,
+    pagination: {
+      el: '.services__swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
 
 });
