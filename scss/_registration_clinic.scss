@@ -1,0 +1,52 @@
+.registration__clinic {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  input,
+  textarea {
+    background: var(--light);
+    border: 1px solid var(--grey_light);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: var(--brown);
+    &::placeholder {
+      font-weight: normal;
+      font-size: 1.25rem;
+      line-height: 25px;
+      color: var(--brown_light);
+    }
+  }
+  textarea {
+    width: 100%;
+    min-height: 171px;
+    margin-bottom: 46px;
+    resize: none;
+  }
+  button {
+    background: var(--color_btn);
+    box-shadow: 0px 4px 1.25rem var(--color_btn);
+    border-radius: 33.5px;
+    padding: 24px 77px;
+    font-size: 1.25rem;
+    line-height: 1.25em;
+    text-align: center;
+    color: var(--light);
+    border: none;
+  }
+}
+.big {
+  width: 100%;
+}
+.small {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  input {
+    width: 50%;
+  }
+}

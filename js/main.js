@@ -6,14 +6,7 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
   });
-  $('.history__slick').slick({
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: '<button type="button" class="custom__slick-prev slick__arrow"><img src="/image/arrow__slide-prev.svg" alt="Стрелка назад" ></button> ',
-    nextArrow: '<button type="button" class="custom__slick-next slick__arrow"><img src="/image/arrow__slide-next.svg" alt="Стрелка вперед" ></button> ',
-  });
+
 
 
   //modal__city
@@ -42,6 +35,16 @@ $(document).ready(function () {
   });
 
   //swiper
+  const history = new Swiper('.history__slider', {
+    slidesPerView: 6,
+    autoHeight: true,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+      prevEl: '.history__btn-prev',
+      nextEl: '.history__btn-next',
+    },
+  });
   const courses = new Swiper('.courses__slider', {
     slidesPerView: 3,
     autoHeight: true,

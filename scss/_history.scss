@@ -28,7 +28,7 @@
   &__img {
     margin-left: 0.31rem;
   }
-  &__slick {
+  &__slider {
     max-width: 71.43rem;
     margin: 0 auto;
   }
@@ -43,21 +43,14 @@
     height: 100%;
   }
 }
-.slick__arrow {
-  object-fit: cover;
-  width: 0;
-  height: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+
+.history__btn-prev {
+  position: relative;
+  top: -90px;
+  left: 55px;
 }
-.custom__slick-prev img {
-  position: absolute;
-  top: 3.43rem;
-  left: -6.25rem;
-}
-.custom__slick-next img {
-  position: absolute;
-  top: 3.43rem;
-  right: -6.25rem;
+.history__btn-next {
+  position: relative;
+  top: -110px;
+  left: 1270px;
 }

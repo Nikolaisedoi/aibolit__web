@@ -27,6 +27,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 .close {
   display: none;
 }
@@ -70,6 +71,7 @@ button {
   height: auto;
   display: block;
 }
+
 .block__title {
   font-weight: normal;
   font-size: 1.87rem;
@@ -184,4 +186,7 @@ button {
   &-active {
     color: var(--color_title);
   }
+}
+.swiper-button-prev::after {
+  display: none;
 }

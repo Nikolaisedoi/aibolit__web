@@ -1,0 +1,120 @@
+.registration {
+  display: flex;
+  &__title {
+    max-width: 20.62rem;
+  }
+  &__block {
+    max-width: 56.81rem;
+    width: 100%;
+    padding-bottom: 6.25rem;
+  }
+  &__list li {
+    margin-bottom: 1.5rem;
+    background: var(--light);
+    box-shadow: 2px 2px 1.25rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid #c3b9b5;
+      box-shadow: 2px 2px 1.25rem rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__list a {
+    @extend.flex-jcsb;
+    padding: 2.06rem;
+    width: 100%;
+    height: 100%;
+  }
+  &__list p {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: var(--color_title);
+  }
+}
+
+//registration__clinic
+.registration__clinic {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  input,
+  textarea {
+    background: var(--light);
+    border: 1px solid var(--grey_light);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: var(--brown);
+    &::placeholder {
+      font-weight: normal;
+      font-size: 1.25rem;
+      line-height: 25px;
+      color: var(--brown_light);
+    }
+  }
+  textarea {
+    width: 100%;
+    min-height: 171px;
+    resize: none;
+  }
+  button {
+    background: var(--color_btn);
+    box-shadow: 0px 4px 1.25rem var(--color_btn);
+    border-radius: 33.5px;
+    padding: 24px 77px;
+    font-size: 1.25rem;
+    line-height: 1.25em;
+    text-align: center;
+    color: var(--light);
+    border: none;
+    margin-top: 46px;
+  }
+}
+.big {
+  width: 100%;
+}
+.small {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  input {
+    width: 50%;
+  }
+}
+
+//registration__online
+.bank__card {
+  width: 100%;
+  min-height: 294px;
+  background: var(--grey_light);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  fieldset {
+    margin: 0;
+    padding: 0;
+    @extend.flex-jcsb;
+    border: none;
+    input:first-child {
+      width: 426px;
+    }
+  }
+  p {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: var(--brown);
+    margin: 24px 16px 40px;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: var(--grey_light);
+    box-shadow: none;
+  }
+}

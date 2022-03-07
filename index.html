@@ -10,7 +10,7 @@
   <link href="https://allfont.ru/allfont.css?fonts=schoolbook" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <!-- <link rel="stylesheet" href="css/swiper-bundle.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,7 +26,7 @@
       <!--logo-->
       <nav class="menu">
         <ul class="menu__list">
-          <li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+          <li><a href="page_lk.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
           <li><a href="#">О НАС</a>
             <ul class="menu__drop-down-list">
               <li><a href="page_services.html">Услуги и цены</a></li>
@@ -525,36 +525,52 @@
         <h2 class="history__title">История компании</h2>
         <p class="history__text">История компании начинается 14 января 1999 года, когда было образовано ООО «Чижи». Идея
           пришла, т.к. у основателя компании Прозор Жанны Георгиевны была собака боксёр по кличке Бард…</p>
-        <a href="page_history.html" class="history__link">ЧИТАТЬ ДАЛЕЕ<img src="/image/history/arrow.svg" alt="стрелка"
+        <a href="page_history.html" class="history__link">ЧИТАТЬ ДАЛЕЕ<img src="image/history/arrow.svg" alt="стрелка"
             class="history__img"></a>
         <h3 class="history__slider-title history__title">Наши специалисты</h3>
-        <div class="history__slick">
-          <div class="history__slide">
-            <img src="image/history/history__slide1.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+        <div class="history__slider swiper">
+          <div class="history__wrapper swiper-wrapper">
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide1.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide2.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide1.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide2.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
+            <div class="history__slide swiper-slide">
+              <img src="image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+            </div>
           </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide2.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
+          <!-- /.history__wrapper swiper-wrapper -->
+          <!-- <div class="history__btn swiper-button-prev">
+            <img src="image/arrow__slide-prev.svg" alt="">
           </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
-          </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide1.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
-          </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide2.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
-          </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
-          </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
-          </div>
-          <div class="history__slide">
-            <img src="/image/history/history__slide3.jpg" alt="Ветеринар делает операцию" class="history__slider-img">
-          </div>
+          <div class="history__btn swiper-button-next">
+            <img src="image/arrow__slide-next.svg" alt="">
+          </div> -->
         </div>
-        <a href="page_collective.html" class="history__link">ПОСМОТРЕТЬ ВСЕХ<img src="/image/history/arrow.svg"
+        <!--history__slider-->
+        <div class="history__btn-prev swiper-button-prev">
+          <img src="image/arrow__slide-prev.svg" alt="">
+        </div>
+        <div class="history__btn-next swiper-button-next">
+          <img src="image/arrow__slide-next.svg" alt="">
+        </div>
+        <a href="page_collective.html" class="history__link">ПОСМОТРЕТЬ ВСЕХ<img src="image/history/arrow.svg"
             alt="стрелка" class="history__img"></a>
       </div>
       <!-- /.container -->
@@ -568,7 +584,7 @@
             <span class="advantages__decor-span">питомцам мы помогли
               за 18 лет работы</span>
           </div>
-          <img src="/image/advantages/bird.png" alt="Изображение птицы" class="advantages__img">
+          <img src="image/advantages/bird.png" alt="Изображение птицы" class="advantages__img">
         </div>
         <!-- /.advantages__decor -->
         <h3 class="advantages__title">Почему хозяева выбирают нас?</h3>
@@ -576,14 +592,14 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Работаем круглосуточно</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img1.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img1.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Мы готовы в любое время суток принять домашних питомцев и их хозяев</p>
             </div>
           </li>
           <li class="advantages__item">
             <h5 class="advantages__item-title">Широкий спектр услуг</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img2.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img2.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Кроме широкопрофильных докторов в клинике развиты узкие направления в
                 ветеринарии – офтальмология, стоматология, дерматология, травматология, ортопедия и онкология</p>
             </div>
@@ -591,7 +607,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Большой опыт</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img3.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img3.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">30 высококвалифицированных врачей нашей клиники предоставляют
                 ветеринарную помощь уже на протяжении 18 лет!</p>
             </div>
@@ -599,7 +615,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Собственная лаборатория</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img4.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img4.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Оборудованная профессиональным оснащением производства компании IDEXX
                 International Inc.(США), которое позволяет получить результаты исследования прямо на приеме</p>
             </div>
@@ -607,7 +623,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Оснащенные стационары</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img5.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img5.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Обычный и инфекционный стационар с индивидуальным подогревом каждой
                 клетки. Для питомцев в критическом состоянии предусмотрены кислородные камеры</p>
             </div>
@@ -615,7 +631,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Новейшее оборудование</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img6.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img6.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Помимо лабораторного оборудования и цифрового рентгена в клинике
                 используется современный эндоскоп KARL STORZ</p>
             </div>
@@ -623,7 +639,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Запись на прием онлайн</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img7.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img7.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Запись на приём позволяет избежать ожиданий в очереди, но если вы не
                 можете приехать - мы выезжаем на дом!</p>
             </div>
@@ -631,7 +647,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Аптека и зоомагазин</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img8.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img8.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Для удобства в клинике предусмотрен аптечный пункт, а также бутик с
                 одеждой и косметическими средствами для ухода за домашними любимцами</p>
             </div>
@@ -639,7 +655,7 @@
           <li class="advantages__item">
             <h5 class="advantages__item-title">Груминг-салон</h5>
             <div class="advantages__item-box">
-              <img src="/image/advantages/advantages__item-img9.svg" alt="Иконка" class="advantages__item-img">
+              <img src="image/advantages/advantages__item-img9.svg" alt="Иконка" class="advantages__item-img">
               <p class="advantages__item-text">Отдельный кабинет для проведения гигиенческих и косметических процедур,
                 таких как мытьё и сушка, стрижка или тримминг, уход за ушами, глазами и когтями и многое другое</p>
             </div>
@@ -658,17 +674,17 @@
               их хозяев</h2>
             <div class="application__img-box">
               <a href="https://apps.apple.com/ru/genre/ios/id36" class="application__link" target="_blank">
-                <img src="/image/application/app_store.png" alt="Логотип app store" class="application__img">
+                <img src="image/application/app_store.png" alt="Логотип app store" class="application__img">
               </a>
               <a href="https://play.google.com/store/apps?hl=ru&gl=US" class="application__link" target="_blank">
-                <img src="/image/application/google_play.png" alt="Логотип google play" class="application__img">
+                <img src="image/application/google_play.png" alt="Логотип google play" class="application__img">
               </a>
             </div>
             <!-- /.application__img-box -->
           </div>
           <!-- /.application__left -->
           <div class="application__right">
-            <img src="/image/application/application_bg.png" alt="Собака " class="application__right-img">
+            <img src="image/application/application_bg.png" alt="Собака " class="application__right-img">
           </div>
           <!-- /.application__right -->
         </div>
@@ -740,7 +756,7 @@
           </div>
           <!-- /.contact__address-wrapper -->
           <div class="contact__map">
-            <img src="/image/contact/contact_bg.png" alt="Карта" class="contact__map-img">
+            <img src="image/contact/contact_bg.png" alt="Карта" class="contact__map-img">
           </div>
           <!-- /.contact__map -->
         </div>
@@ -767,10 +783,10 @@
         <!--footer__logo-->
         <div class="application__img-box">
           <a href="https://apps.apple.com/ru/genre/ios/id36" class="application__link" target="_blank">
-            <img src="/image/application/app_store.png" alt="Логотип app store" class="application__img">
+            <img src="image/application/app_store.png" alt="Логотип app store" class="application__img">
           </a>
           <a href="https://play.google.com/store/apps?hl=ru&gl=US" class="application__link" target="_blank">
-            <img src="/image/application/google_play.png" alt="Логотип google play" class="application__img">
+            <img src="image/application/google_play.png" alt="Логотип google play" class="application__img">
           </a>
         </div>
         <!-- /.application__img-box -->
@@ -828,7 +844,7 @@
           </div>
           <!-- /.footer__site-->
           <div class="footer__made">
-            <img src="/image/footer/heart.png" alt="Сердце">
+            <img src="image/footer/heart.png" alt="Сердце">
           </div>
           <!-- /.footer__made -->
         </div>
@@ -887,7 +903,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
+  <!-- <script src="js/swiper-bundle.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 
